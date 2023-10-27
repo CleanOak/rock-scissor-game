@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <link rel="stylesheet" href="assets/css/style.css">
     <title>ROPASci-Game</title>
 </head>
@@ -24,6 +30,21 @@
         <div id="score-display">
             <span id="user-score">0</span> <span>:</span> <span id="computer-score">0</span>
         </div>
+
+        <div id="choices">
+            <button data-type="rock" class="btn btn--big btn--green">
+                <i class="fa-regular fa-hand-back-fist"></i>
+            </button>
+
+            <button data-type="rock" class="btn btn--big btn--green">
+                   <i class="fa-regular fa-hand"></i>
+            </button>
+
+            <button data-type="rock" class="btn btn--big btn--green">
+                <i class="fa-regular fa-hand-scissors"></i>
+            </button>
+
+        </div>
          
         </div>
         
@@ -32,6 +53,6 @@
     <p>Display commentary on game here. You win!</p>
    </div>
 
-
+  
 </body>
 </html>
