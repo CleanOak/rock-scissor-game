@@ -59,8 +59,30 @@ h1 {
 }
 
 #choices {
+    width: 85%;
+    margin: 30px auto;
+}
+
+i {
+    font-size: 40px;
     
 }
+
+.btn {
+    width: 120px;
+    height: 50px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border-radius: 6px;
+    color: blue;
+}
+
+#btn-reset{
+    background-color: green;
+    
+}
+
 
 .result {
     font-size: 25px;
