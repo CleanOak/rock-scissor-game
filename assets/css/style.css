@@ -1,0 +1,46 @@
+
+body {
+    background-color: white;
+    text-align: center;
+}
+
+h1 {
+    color: green;
+}
+
+.score-board {
+    background-color: #E6ECF0;
+    box-sizing: border-box;
+    width: 75%;
+    height: 65vh;
+    max-height: 450px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+}
+
+.user-comp{
+    display:flex;
+    justify-content: center;
+    margin: 10px auto;
+   
+
+    
+}
+
+#user-div {
+    border: 3px solid black;
+    width: 80px;
+    height: 80px;
+    /*margin: 5px auto; */
+   
+}
+
+#comp-div {
+    border: 3px solid black;
+    width: 80px;
+    height: 80px;
+   /* margin: 5px auto; */
+    
+}
