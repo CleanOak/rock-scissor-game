@@ -85,5 +85,27 @@ i {
 
 
 .result {
-    font-size: 25px;
+    font-size: 20px;
 }
+
+
+/* Media query */
+
+@media screen and (min-width: 768px) {
+    
+    .score-board {
+       
+        width: 75%;
+        height: 65vh;
+        max-height: 550px;
+        max-width: 430px;
+         
+        
+    }
+
+    .btn {
+        width: 95px;
+        height: 45px;
+        
+    }
+} 
