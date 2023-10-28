@@ -10,8 +10,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
         button.addEventListener("click", function(){           
         let signType = this.getAttribute("sign-type");
-        
+
         getWinner(yourSignChoice(signType), getComputerChoice());
+
         })
     }
     
@@ -27,25 +28,22 @@ function getComputerChoice (){
    let randomChoice = (Math.floor(Math.random() * 3));
 
    if (randomChoice === 0){
-        compChoice = "ro";
-        console.log(compChoice);
+        console.log("ro");
+        
    }
     else if (randomChoice === 1){
-        compChoice = "pa";
-        console.log(compChoice);
+        console.log("pa");
+        
     }
        else if (randomChoice === 2){
-        compChoice = "sci";
-        console.log(compChoice);
+        console.log("sci");
         }   
   
 }
 
 function getWinner(user, computer){
   
-if (user === "rock" && computer === "ro")
- 
-    console.log("Hello world");
+    if (user)
 }
 
 
