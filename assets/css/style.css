@@ -71,16 +71,19 @@ i {
 .btn {
     width: 75px;
     height: 35px;
-    font-family: "Raleway", sans-serif;
+    /*font-family: "Raleway", sans-serif; */
     text-transform: uppercase;
     letter-spacing: 1.2px;
     border-radius: 6px;
     color: blue;
 }
 
-#btn-reset{
+input{
     background-color: green;
-    
+    width: 75px;
+    height: 35px;
+    color: blue;
+    border-radius: 6px;
 }
 
 
@@ -107,5 +110,10 @@ i {
         width: 95px;
         height: 45px;
         
+    }
+
+    input{
+        width: 95px;
+        height: 45px;
     }
 } 
