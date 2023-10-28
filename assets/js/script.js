@@ -2,39 +2,58 @@
 //get button elements
 
 
+//let winner = getResuls(yourSignChoice, getComputerChoice);
+let compChoice;
 document.addEventListener("DOMContentLoaded", function(){
         let buttons = document.getElementsByTagName("button");
         for (let button of buttons) {
-        button.addEventListener("click", function(){
 
-            let signType = this.getAttribute("sign-type");
-            yourSignChoice(signType);
-            computerChoice();
-            
+        button.addEventListener("click", function(){           
+        let signType = this.getAttribute("sign-type");
+        
+        getWinner(yourSignChoice(signType), getComputerChoice());
         })
     }
     
 })
 
 function yourSignChoice(signType){
-    console.log("You have clicked on the " + signType);
-    
+   console.log (signType);  
+  
 }
 
-function computerChoice (){
+function getComputerChoice (){
+    
    let randomChoice = (Math.floor(Math.random() * 3));
 
    if (randomChoice === 0){
-    console.log("rock");
+        compChoice = "ro";
+        console.log(compChoice);
    }
     else if (randomChoice === 1){
-        console.log("paper");
+        compChoice = "pa";
+        console.log(compChoice);
     }
        else if (randomChoice === 2){
-            console.log("scissors");
+        compChoice = "sci";
+        console.log(compChoice);
         }   
   
 }
+
+function getWinner(user, computer){
+  
+if (user === "rock" && computer === "ro")
+ 
+    console.log("Hello world");
+}
+
+
+
+
+
+
+
 
 
 
