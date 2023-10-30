@@ -133,15 +133,17 @@ resultsComments.textContent = "It's A Draw!!!"
 }
 
 function reset(){
-   userScoreSpan.textContent = userScore;
-   computerScoreSpan.textContent = computerScore;
+userScore;
+computerScore;
+userScoreSpan;
+computerScoreSpan;
+resultsComments;
+userWeapon;
+computerWeapon;
 
 }
 
-function weaponDisplay(){
-  let compterChoice = getComputerChoice;
 
-}
 
 
 
