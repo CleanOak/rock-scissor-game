@@ -22,15 +22,20 @@
     <div class="score-board">
 
         <div class="user-comp">     
-        <div id="user-div">User</div>
+        <div id="user-div"><p>Player</p>
+            <span id="u-weapon"></span>
+        </div>
         <p>VS</p>
-        <div id="comp-div">Computer</div>
+        <div id="comp-div"><p>Computer</p>
+            <span id="c-weapon"></span>
+        </div>
         </div>
 
         <div id="score-display">
-            <span id="user-score">0</span> <span>:</span> <span id="computer-score">0</span>
+           <span id="user-score">0</span> <span>: </span><span id="computer-score">0</span> 
         </div>
 
+        <!-- buttons to select weapon-->
         <div id="choices">
             <button sign-type="rock" class="btn">
                 <i class="fa-regular fa-hand-back-fist"></i>
@@ -46,12 +51,17 @@
 
         </div>
 
-       <!-- <button data-type="reset" id="btn-reset" class="btn"> Reset</button> -->
-        <input type="reset" value="Reset">
+       <!--Reset <input id="reset" type="reset" value="Reset" onclick="reset();"> button-->
+        
+        <button sign-type="reset" class="btn-reset">Reset</button>
 
-        <h3 id ="display-comments">Click on any sign to start Game!!!</h3>
+        <h3 id ="display-comments">Choose your weapon to start Game!!!</h3>
          
         </div>
+
+        <div id="timer">
+            <p>Time left: <span id="countdown">10</span>s</p>
+         </div>
         
 
   <script src="assets/js/script.js"></script>
