@@ -16,12 +16,23 @@ document.addEventListener("DOMContentLoaded", function(){
 })
 
 function playGame(userChoice){
-  let compterChoice = getComputerChoice();
-  console.log(userChoice);
+  let computerChoice = getComputerChoice();
 
-  if(compterChoice === "rock"){
-    console.log("This is rock");
+  console.log('userChoice =>', userChoice)
+  console.log('computerChoice =>', computerChoice)
+
+  if(userChoice === "rock" && computerChoice === "rock"){
+    console.log ("It's a Draw!!!");
   }
+  if(userChoice === "paper" && computerChoice === "paper"){
+    console.log("It's a Draw!!!");
+  }
+
+  if(userChoice === "scissors" && computerChoice === "sci"){
+    console.log("It's a Draw!!!");
+  }
+
+  
 
 }
 
@@ -30,7 +41,7 @@ function getComputerChoice (){
 
     let choices = ['rock', 'paper', 'sci']
     let randomChoice = (Math.floor(Math.random() * 3));
-    console.log(choices[randomChoice]);
+    return choices[randomChoice];
    
 }
 
