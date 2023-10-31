@@ -16,8 +16,9 @@ document.addEventListener("DOMContentLoaded", function(){
 
         button.addEventListener("click", function(){     
           if(this.getAttribute("sign-type") === "reset"){
-              //console.log("reset button");
+             // console.log("reset button");
               reset();
+              
           } else {    
         let signType = this.getAttribute("sign-type");
         
@@ -61,7 +62,7 @@ function playGame(userChoice){
   //draw conditions
   if(userChoice === "rock" && computerChoice === "rock"){
     draw();
-   
+    
   }
 
   if(userChoice === "paper" && computerChoice === "paper"){
@@ -133,18 +134,11 @@ resultsComments.textContent = "It's A Draw!!!"
 }
 
 function reset(){
-userScore;
-computerScore;
-userScoreSpan;
-computerScoreSpan;
-resultsComments;
-userWeapon;
-computerWeapon;
+
+  userScoreSpan.textContent = 0;
+  computerScoreSpan.textContent = 0;
 
 }
-
-
-
 
 
 
