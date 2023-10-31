@@ -134,9 +134,7 @@ resultsComments.textContent = "It's A Draw!!!"
 }
 
 function reset(){
-
-  //userScoreSpan.textContent = 0;
-  //computerScoreSpan.textContent = 0;
+  
   window.location.reload();
 }
 
