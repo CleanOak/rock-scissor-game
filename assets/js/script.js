@@ -8,6 +8,9 @@ let computerScoreSpan = document.getElementById("computer-score");
 let resultsComments = document.getElementById("display-comments");
 let userWeapon = document.getElementById("u-weapon");
 let computerWeapon = document.getElementById("c-weapon");
+let timeLeft = document.getElementById("countdown");
+let timerId = setInterval(countDown, 1000);
+let timeSecond = 10;
 
 
 document.addEventListener("DOMContentLoaded", function(){
@@ -16,13 +19,12 @@ document.addEventListener("DOMContentLoaded", function(){
 
         button.addEventListener("click", function(){     
           if(this.getAttribute("sign-type") === "reset"){
-             // console.log("reset button");
-              reset();
-              
+                    reset();       
           } else {    
         let signType = this.getAttribute("sign-type");
         
-       playGame(signType);
+        playGame(signType);
+        
            }
         })    
     }  
@@ -30,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 function playGame(userChoice){
   let computerChoice = getComputerChoice();
-  
+
  //display user weapon
  if (userChoice === "rock"){
   userWeapon.innerHTML = "rock";
@@ -133,11 +135,26 @@ function draw(){
 resultsComments.textContent = "It's A Draw!!!"
 }
 
+
+//reset page
 function reset(){
   
-  window.location.reload();
+  //window.location.reload();
+  document.location.reload();
 }
 
+//countdown to reset the game
+function countDown(){
+
+timeSecond--;
+timeLeft.innerHTML = timeSecond;
+
+if(timeSecond === 0 || timeSecond < 1) {
+  clearInterval(timerId);
+  //document.location.reload();
+  
+  }    
+}
 
 
 
