@@ -42,13 +42,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // initialize start game buttons
-  let startButtons = document.getElementsByClassName("start-game");
-  for (let button of startButtons) {
+  let startGameButtons = document.getElementsByClassName("start-game");
+  for (let button of startGameButtons) {
 
     button.addEventListener("click", function () {
-      document.getElementById("game-intro").style.display = "none";
-      document.getElementById("game-board").style.display = "block";
-      document.getElementById("game-end").style.display = "none";
+      showGameBoard();
     })
   }
 
@@ -174,7 +172,10 @@ function determineTotalWinner() {
     displayTotalWinner.textContent = "It's A Draw!!!"
   }
 
+  //initialize or reset game state
   //show end div and final winner
+  initializeGameState();
+  showGameEnd();
 
 }
 //reset page
@@ -217,6 +218,22 @@ function showGameEnd() {
   document.getElementById("game-end").style.display = "block";
 }
 
+function initializeGameState() {
+  userScore = 0;
+  computerScore = 0;
+  userScoreSpan.textContent = userScore;
+  computerScoreSpan.textContent = computerScore;
+  resultsComments.textContent = 'Choose your weapon to start Game!!!';
+  // displayTotalWinner.textContent='';
+  userWeapon.textContent = '';
+  computerWeapon.textContent = '';
+  timeSecond = 10;
+  timeLeft.textContent = timeSecond;
+  timerId = null;
+  if (timerId != null) {
+    clearInterval(timerId);
+  }
+}
 
 
 
