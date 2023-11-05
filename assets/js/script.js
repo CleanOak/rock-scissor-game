@@ -6,6 +6,7 @@ let computerScore = 0;
 let userScoreSpan = document.getElementById("user-score");
 let computerScoreSpan = document.getElementById("computer-score");
 let resultsComments = document.getElementById("display-comments");
+let displayTotalWinner = document.getElementById("display-total-winner");
 let userWeapon = document.getElementById("u-weapon");
 let computerWeapon = document.getElementById("c-weapon");
 let timeLeft = document.getElementById("countdown");
@@ -111,6 +112,8 @@ function playGame(userChoice) {
 
   }
 
+
+
 }
 
 function getComputerChoice() {
@@ -137,7 +140,19 @@ function draw() {
   resultsComments.textContent = "It's A Draw!!!"
 }
 
+function determineTotalWinner(){
 
+  if(computerScore>userScore){
+    displayTotalWinner.textContent = "Computer Wins"
+  }
+
+  if(computerScore<userScore){
+    displayTotalWinner.textContent = "You Win"
+  }
+  if(computerScore==userScore){
+    displayTotalWinner.textContent = "It's A Draw!!!"
+  }
+}
 //reset page
 function reset() {
 
@@ -154,7 +169,7 @@ function countDown() {
 
   if (timeSecond === 0 || timeSecond < 1) {
     clearInterval(timerId);
-    //document.location.reload();
+    determineTotalWinner();
 
   }
 }
