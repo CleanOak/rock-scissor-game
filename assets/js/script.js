@@ -3,6 +3,11 @@
 
 let userScore = 0;
 let computerScore = 0;
+
+let gameIntro = document.getElementById("game-intro");
+let gameBoard = document.getElementById("game-board");
+let gameEnd = document.getElementById("game-end");
+
 let userScoreSpan = document.getElementById("user-score");
 let computerScoreSpan = document.getElementById("computer-score");
 let resultsComments = document.getElementById("display-comments");
@@ -14,23 +19,39 @@ let timeSecond = 10;
 let timerId = null;
 
 document.addEventListener("DOMContentLoaded", function () {
-  let buttons = document.getElementsByTagName("button");
-  for (let button of buttons) {
 
+  // initialize reset button
+  let resetButtons = document.getElementsByClassName("reset-button");
+  for (let button of resetButtons) {
     button.addEventListener("click", function () {
-      if (this.getAttribute("sign-type") === "reset") {
-        reset();
-      } else {
-
-        let signType = this.getAttribute("sign-type");
-        if (timerId==null) {
-          timerId = setInterval(countDown, 1000);
-        }
-        playGame(signType);
-
-      }
+      reset();
     })
   }
+
+
+  // initialize game choice buttons
+  let choiceButtons = document.getElementsByClassName("choice-button");
+  for (let button of choiceButtons) {
+    button.addEventListener("click", function () {
+      let signType = this.getAttribute("sign-type");
+      if (timerId == null) {
+        timerId = setInterval(countDown, 1000);
+      }
+      playGame(signType);
+    })
+  }
+
+  // initialize start game buttons
+  let startButtons = document.getElementsByClassName("start-game");
+  for (let button of startButtons) {
+
+    button.addEventListener("click", function () {
+      document.getElementById("game-intro").style.display = "none";
+      document.getElementById("game-board").style.display = "block";
+      document.getElementById("game-end").style.display = "none";
+    })
+  }
+
 })
 
 function playGame(userChoice) {
@@ -140,18 +161,21 @@ function draw() {
   resultsComments.textContent = "It's A Draw!!!"
 }
 
-function determineTotalWinner(){
+function determineTotalWinner() {
 
-  if(computerScore>userScore){
+  if (computerScore > userScore) {
     displayTotalWinner.textContent = "Computer Wins"
   }
 
-  if(computerScore<userScore){
+  if (computerScore < userScore) {
     displayTotalWinner.textContent = "You Win"
   }
-  if(computerScore==userScore){
+  if (computerScore == userScore) {
     displayTotalWinner.textContent = "It's A Draw!!!"
   }
+
+  //show end div and final winner
+
 }
 //reset page
 function reset() {
@@ -175,6 +199,23 @@ function countDown() {
 }
 
 
+function showGameIntro() {
+  document.getElementById("game-intro").style.display = "block";
+  document.getElementById("game-board").style.display = "none";
+  document.getElementById("game-end").style.display = "none";
+}
+
+function showGameBoard() {
+  document.getElementById("game-intro").style.display = "none";
+  document.getElementById("game-board").style.display = "block";
+  document.getElementById("game-end").style.display = "none";
+}
+
+function showGameEnd() {
+  document.getElementById("game-intro").style.display = "none";
+  document.getElementById("game-board").style.display = "none";
+  document.getElementById("game-end").style.display = "block";
+}
 
 
 

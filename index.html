@@ -19,7 +19,21 @@
         <h1>Rock Paper Scissor Game</h1>
     </header>
 
-    <div class="score-board">
+    
+
+    <div id="game-intro">
+
+        <h3>Welcome</h3>
+        
+        <button class="btn-reset  start-game" >Start</button>
+         
+        </div>
+
+
+
+
+
+    <div class="score-board"  id="game-board">
 
         <div class="user-comp">     
         <div id="user-div"><p>Player</p>
@@ -37,15 +51,15 @@
 
         <!-- buttons to select weapon-->
         <div id="choices">
-            <button sign-type="rock" class="btn">
+            <button sign-type="rock" class="btn  choice-button">
                 <i class="fa-regular fa-hand-back-fist"></i>
             </button>
 
-            <button sign-type="paper" class="btn">
+            <button sign-type="paper" class="btn choice-button">
                    <i class="fa-regular fa-hand"></i>
             </button>
 
-            <button sign-type="scissors" class="btn">
+            <button sign-type="scissors" class="btn choice-button">
                 <i class="fa-regular fa-hand-scissors"></i>
             </button>
 
@@ -53,18 +67,24 @@
 
        <!--Reset <input id="reset" type="reset" value="Reset" onclick="reset();"> button-->
         
-        <button sign-type="reset" class="btn-reset">Reset</button>
+        <button sign-type="reset" class="btn-reset reset-button">Reset</button>
 
         <h3 id ="display-comments">Choose your weapon to start Game!!!</h3>
-
-        <h2 id ="display-total-winner"></h2>
 
         <p id=>Time left: <span id="countdown">10</span>s</p>
          
         </div>
 
     
-        
+
+
+        <div id="game-end">
+
+            <h2 id ="display-total-winner"></h2>
+            
+            <button class="btn-reset  start-game">Start</button>
+             
+            </div>
 
   <script src="assets/js/script.js"></script>
 </body>

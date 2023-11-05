@@ -8,6 +8,18 @@ h1 {
     color: green;
 }
 
+
+#game-board {
+   display: none;
+}
+
+#game-end {
+    display: none;
+ }
+
+
+
+
 .score-board {
     background-color: #E6ECF0;
     box-sizing: border-box;
