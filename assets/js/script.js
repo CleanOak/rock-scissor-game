@@ -17,6 +17,7 @@ let computerWeapon = document.getElementById("c-weapon");
 let timeLeft = document.getElementById("countdown");
 let timeSecond = 10;
 let timerId = null;
+let gameLevel ='easy';
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -46,6 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
   for (let button of startGameButtons) {
 
     button.addEventListener("click", function () {
+      let level = this.getAttribute("level");
+      gameLevel=level;
       showGameBoard();
     })
   }
@@ -135,10 +138,28 @@ function playGame(userChoice) {
 
 }
 
+// function getComputerChoice() {
+
+//   let choices = ['rock', 'paper', 'sci']
+//   let randomChoice = (Math.floor(Math.random() * 3));
+//   return choices[randomChoice];
+
+// }
+
 function getComputerChoice() {
 
-  let choices = ['rock', 'paper', 'sci']
-  let randomChoice = (Math.floor(Math.random() * 3));
+  let choices;
+  let randomChoice;
+
+if(gameLevel == 'easy'){
+  choices = ['rock', 'paper']
+  randomChoice = (Math.floor(Math.random() * choices.length));
+}
+
+if(gameLevel == 'hard'){
+  choices = ['rock', 'paper', 'sci']
+  randomChoice = (Math.floor(Math.random() * choices.length));
+}
   return choices[randomChoice];
 
 }
@@ -230,6 +251,7 @@ function initializeGameState() {
   timeSecond = 10;
   timeLeft.textContent = timeSecond;
   timerId = null;
+  gameLevel='easy';
   if (timerId != null) {
     clearInterval(timerId);
   }
