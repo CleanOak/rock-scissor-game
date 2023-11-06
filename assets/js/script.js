@@ -17,7 +17,7 @@ let displayTotalWinner = document.getElementById("display-total-winner");
 let userWeapon = document.getElementById("u-weapon");
 let computerWeapon = document.getElementById("c-weapon");
 let timeLeft = document.getElementById("countdown");
-let timeSecond = 10;
+let timeSecond = 20;
 let timerId = null;
 let gameLevel ='easy';
 
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", function () {
       let signType = this.getAttribute("sign-type");
       if (timerId == null) {
-        timerId = setInterval(countDown, 1000);
+        timerId = setInterval(countDown, 2000);
       }
       playGame(signType);
     })
@@ -213,7 +213,7 @@ function playGame(userChoice) {
 
   }
 
-  if (userChoice === "lizard" && computerChoice === "roscick") {
+  if (userChoice === "lizard" && computerChoice === "sci") {
     compWin();
 
   }
@@ -324,7 +324,7 @@ function initializeGameState() {
   resultsComments.textContent = 'Choose your weapon to start Game!!!';
   userWeapon.textContent = '';
   computerWeapon.textContent = '';
-  timeSecond = 10;
+  timeSecond = 20;
   timeLeft.textContent = timeSecond;
   timerId = null;
   gameLevel='easy';
