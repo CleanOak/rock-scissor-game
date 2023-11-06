@@ -143,12 +143,12 @@ function getComputerChoice() {
   let randomChoice;
 
 if(gameLevel == 'easy'){
-  choices = ['rock', 'paper']
+  choices = ['rock', 'paper', 'sci']
   randomChoice = (Math.floor(Math.random() * choices.length));
 }
 
 if(gameLevel == 'hard'){
-  choices = ['rock', 'paper', 'sci']
+  choices = ['rock', 'paper', 'sci', 'lizard', 'spock']
   randomChoice = (Math.floor(Math.random() * choices.length));
 }
   return choices[randomChoice];

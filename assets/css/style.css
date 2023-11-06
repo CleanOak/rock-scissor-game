@@ -8,6 +8,11 @@ h1 {
     color: green;
 }
 
+img{
+    width: 310px;
+    height: 200px;
+
+}
 
 #game-board {
    display: none;
@@ -92,10 +97,12 @@ i {
 
 .btn-reset{
     background-color: green;
-    width: 75px;
+    width: 250px;
     height: 35px;
     color: white;
     border-radius: 6px;
+    margin: 4px 0 8px;
+    font-size: 18px;
 }
 
 
@@ -128,5 +135,10 @@ i {
     input{
         width: 95px;
         height: 45px;
+    }
+
+    img{
+        width: 650px;
+        height: 400px;
     }
 } 
