@@ -134,18 +134,9 @@ function playGame(userChoice) {
 
   }
 
-
-
 }
 
-// function getComputerChoice() {
-
-//   let choices = ['rock', 'paper', 'sci']
-//   let randomChoice = (Math.floor(Math.random() * 3));
-//   return choices[randomChoice];
-
-// }
-
+//Computer choices based on level
 function getComputerChoice() {
 
   let choices;
@@ -245,7 +236,6 @@ function initializeGameState() {
   userScoreSpan.textContent = userScore;
   computerScoreSpan.textContent = computerScore;
   resultsComments.textContent = 'Choose your weapon to start Game!!!';
-  // displayTotalWinner.textContent='';
   userWeapon.textContent = '';
   computerWeapon.textContent = '';
   timeSecond = 10;
