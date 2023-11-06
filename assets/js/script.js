@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     button.addEventListener("click", function () {
       let signType = this.getAttribute("sign-type");
       if (timerId == null) {
-        timerId = setInterval(countDown, 2000);
+        timerId = setInterval(countDown, 1000);
       }
       playGame(signType);
     })
