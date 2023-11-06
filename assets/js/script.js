@@ -316,6 +316,24 @@ function showGameEnd() {
   document.getElementById("game-end").style.display = "block";
 }
 
+//button to the Rules page
+function rulesPage(){
+
+  location.href='rules.html';
+}
+
+//Home button
+function homeButton (){
+  location.href='index.html';
+}
+
+//Button to the feedback page
+function feedbackPage(){
+  location.href='feedback.html';
+}
+
+
+//Initialize game to initial state
 function initializeGameState() {
   userScore = 0;
   computerScore = 0;
