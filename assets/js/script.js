@@ -8,6 +8,8 @@ let gameIntro = document.getElementById("game-intro");
 let gameBoard = document.getElementById("game-board");
 let gameEnd = document.getElementById("game-end");
 
+let rulesButton = document.getElementById("rules");
+
 let userScoreSpan = document.getElementById("user-score");
 let computerScoreSpan = document.getElementById("computer-score");
 let resultsComments = document.getElementById("display-comments");
@@ -72,6 +74,16 @@ function playGame(userChoice) {
     userWeapon.style.color = "blue"
   }
 
+  if (userChoice === "lizard") {
+    userWeapon.innerHTML = "lizard";
+    userWeapon.style.color = "blue"
+  }
+
+  if (userChoice === "spock") {
+    userWeapon.innerHTML = "spock";
+    userWeapon.style.color = "blue"
+  }
+
   //display computer weapon
   if (computerChoice === "rock") {
     computerWeapon.innerHTML = "rock";
@@ -83,6 +95,16 @@ function playGame(userChoice) {
   }
   if (computerChoice === "sci") {
     computerWeapon.innerHTML = "scissors";
+    computerWeapon.style.color = "red"
+  }
+
+  if (computerChoice === "lizard") {
+    computerWeapon.innerHTML = "lizard";
+    computerWeapon.style.color = "red"
+  }
+
+  if (computerChoice === "spock") {
+    computerWeapon.innerHTML = "spock";
     computerWeapon.style.color = "red"
   }
 
@@ -98,6 +120,16 @@ function playGame(userChoice) {
   }
 
   if (userChoice === "scissors" && computerChoice === "sci") {
+    draw();
+
+  }
+
+  if (userChoice === "lizard" && computerChoice === "lizard") {
+    draw();
+
+  }
+
+  if (userChoice === "spock" && computerChoice === "spock") {
     draw();
 
   }
@@ -118,6 +150,32 @@ function playGame(userChoice) {
 
   }
 
+  if (userChoice === "lizard" && computerChoice === "paper") {
+    youWin();
+
+  }
+
+  if (userChoice === "scissors" && computerChoice === "lizard") {
+    youWin();
+
+  }
+
+  if (userChoice === "spock" && computerChoice === "rock") {
+    youWin();
+
+  }
+
+
+  if (userChoice === "paper" && computerChoice === "spock") {
+    youWin();
+
+  }
+
+  if (userChoice === "spock" && computerChoice === "sci") {
+    youWin();
+
+  }
+
   //computer win conditions
   if (userChoice === "rock" && computerChoice === "paper") {
     compWin();
@@ -134,6 +192,31 @@ function playGame(userChoice) {
 
   }
 
+  //new
+  if (userChoice === "lizard" && computerChoice === "rock") {
+    compWin();
+
+  }
+
+  if (userChoice === "scissors" && computerChoice === "spock") {
+    compWin();
+
+  }
+
+  if (userChoice === "paper" && computerChoice === "lizard") {
+    compWin();
+
+  }
+
+  if (userChoice === "rock" && computerChoice === "spock") {
+    compWin();
+
+  }
+
+  if (userChoice === "lizard" && computerChoice === "roscick") {
+    compWin();
+
+  }
 }
 
 //Computer choices based on level
@@ -143,6 +226,11 @@ function getComputerChoice() {
   let randomChoice;
 
 if(gameLevel == 'easy'){
+  choices = ['rock', 'paper']
+  randomChoice = (Math.floor(Math.random() * choices.length));
+}
+
+if(gameLevel == 'medium'){
   choices = ['rock', 'paper', 'sci']
   randomChoice = (Math.floor(Math.random() * choices.length));
 }
@@ -192,8 +280,6 @@ function determineTotalWinner() {
 }
 //reset page
 function reset() {
-
-  //window.location.reload();
   document.location.reload();
 }
 
