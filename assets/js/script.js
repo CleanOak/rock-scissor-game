@@ -1,5 +1,6 @@
-// Wait for DOM to finish running before game starts
-//get button elements
+/**
+ * Set up variables for DOM valuse
+ */
 
 let userScore = 0;
 let computerScore = 0;
@@ -21,6 +22,10 @@ let timeSecond = 20;
 let timerId = null;
 let gameLevel ='easy';
 
+/**
+ * Add an event listener to the document and run the main screen
+ */
+
 document.addEventListener("DOMContentLoaded", function () {
 
   // initialize reset button
@@ -32,7 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 
-  // initialize game choice buttons
+  /**
+   * Initialise buttons for the game
+   */
   let choiceButtons = document.getElementsByClassName("choice-button");
   for (let button of choiceButtons) {
     button.addEventListener("click", function () {
@@ -44,7 +51,9 @@ document.addEventListener("DOMContentLoaded", function () {
     })
   }
 
-  // initialize start game buttons
+  /**
+   * Initialise levels buttons to start the game
+   */
   let startGameButtons = document.getElementsByClassName("start-game");
   for (let button of startGameButtons) {
 
@@ -56,6 +65,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
 })
+
+/**
+ * Function for the logic of the game
+ */
 
 function playGame(userChoice) {
   let computerChoice = getComputerChoice();
@@ -84,7 +97,9 @@ function playGame(userChoice) {
     userWeapon.style.color = "blue"
   }
 
-  //display computer weapon
+  /**
+   * Display user and computer choices in real-time
+   */
   if (computerChoice === "rock") {
     computerWeapon.innerHTML = "rock";
     computerWeapon.style.color = "red"
@@ -108,7 +123,9 @@ function playGame(userChoice) {
     computerWeapon.style.color = "red"
   }
 
-  //draw conditions
+  /**
+   * Conditions for the user and computer to draw
+   */
   if (userChoice === "rock" && computerChoice === "rock") {
     draw();
 
@@ -134,7 +151,9 @@ function playGame(userChoice) {
 
   }
 
-  //user win conditions
+ /**
+  * Conditions for User to win
+  */
   if (userChoice === "rock" && computerChoice === "sci") {
     youWin();
 
@@ -176,7 +195,9 @@ function playGame(userChoice) {
 
   }
 
-  //computer win conditions
+ /**
+  * conditions for computer to win
+  */
   if (userChoice === "rock" && computerChoice === "paper") {
     compWin();
 
@@ -192,7 +213,6 @@ function playGame(userChoice) {
 
   }
 
-  //new
   if (userChoice === "lizard" && computerChoice === "rock") {
     compWin();
 
@@ -219,7 +239,12 @@ function playGame(userChoice) {
   }
 }
 
-//Computer choices based on level
+/**
+ * Computer choices made based on levels
+ * Easy level has has only two choices from the array
+ * Medium level has three choices from the array
+ * Hard level has five choices based on the array
+ */
 function getComputerChoice() {
 
   let choices;
@@ -243,12 +268,18 @@ if(gameLevel == 'hard'){
 
 }
 
+/**
+ * Display user comments when winning 
+ */
 function youWin() {
   userScore++;
   userScoreSpan.textContent = userScore;
   resultsComments.textContent = "You Win";
 }
 
+/**
+ * Display computer comments when winning
+ */
 function compWin() {
   computerScore++;
   computerScoreSpan.textContent = computerScore;
@@ -272,8 +303,10 @@ function determineTotalWinner() {
     displayTotalWinner.textContent = "It's A Draw!!!"
   }
 
-  //initialize or reset game state
-  //show end div and final winner
+  /**
+   * initialize or reset game state
+   * show end div and final winner
+   */
   initializeGameState();
   showGameEnd();
 
@@ -283,9 +316,9 @@ function reset() {
   document.location.reload();
 }
 
-
-
-//countdown to reset the game
+/**
+ * countdown to reset the game
+ */
 function countDown() {
   timeSecond--;
   timeLeft.innerHTML = timeSecond;
@@ -298,11 +331,22 @@ function countDown() {
 }
 
 
+/**
+ * Display main screen when game is initiated
+ * game board to be hidden when user has not made a choice
+ * Finish screen not displayed until game is over
+ */
 function showGameIntro() {
   document.getElementById("game-intro").style.display = "block";
   document.getElementById("game-board").style.display = "none";
   document.getElementById("game-end").style.display = "none";
 }
+
+/**
+ * Game board is displayed when user selects a level
+ * Initial screen is hidden when user starts playing game
+ * Finish screen is hidden until game ends
+ */
 
 function showGameBoard() {
   document.getElementById("game-intro").style.display = "none";
@@ -310,13 +354,16 @@ function showGameBoard() {
   document.getElementById("game-end").style.display = "none";
 }
 
+/**
+ * Game and Initial screens are hidden to display final screen
+ */
 function showGameEnd() {
   document.getElementById("game-intro").style.display = "none";
   document.getElementById("game-board").style.display = "none";
   document.getElementById("game-end").style.display = "block";
 }
 
-//button to the Rules page
+//Button to the Rules page
 function rulesPage(){
 
   location.href='rules.html';
@@ -333,7 +380,9 @@ function feedbackPage(){
 }
 
 
-//Initialize game to initial state
+/**
+ * Set game to initial state 
+ */
 function initializeGameState() {
   userScore = 0;
   computerScore = 0;
