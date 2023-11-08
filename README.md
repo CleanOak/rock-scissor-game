@@ -53,4 +53,71 @@ The goal of this project is to build an easy and intuitive  Rock, Paper, Scissor
 - Create a simple navigation on the website
 - Create a fully responsive and accessible website
 
+## User Experience
+
+### Target Audience
+
+- Anyone who wants to be entertained by playing on the computer
+- Anyone who enjoys guessing games
+
+### User Requirements and Expectations
+
+- Easy to understand and navigate
+- Accessibility
+- A responsive website that allows users to play across different devices
+- Easy way to contact the developer with feedback
+
+## User Stories
+
+### Site User
+
+1. I want to easily understand the game
+2. I want to be able to choose a difficulty level
+3. I want to be able to see real-time scores when playing with the computer
+4. I want to know who won at the end of the game
+5. I want to be able to contact the developer
+
+### Site Owner
+
+1. I want users to easily understand the game
+2. I want users to easily navigate the game
+3. I want the game to be fully responsive
+4. I want the users to provide feedback after playing the game
+
+## Design
+
+### Colour Scheme
+
+### Fonts
+
+### Structure
+
+### Wireframes
+
+## Technologies Used
+
+### Languages
+
+- HTML
+- CSS
+- JAVASCRIPT
+
+## Frameworks and Tools
+
+## Features
+
+## Validation
+
+### HTML Validation
+
+### CSS Validation
+
+### JavaScript Validation
+
+### Accessibility
+
+### Performance
+
+### Testing
+
 
