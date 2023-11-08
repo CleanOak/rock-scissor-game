@@ -53,11 +53,11 @@ img{
     position: relative;
 }
 
-ul{
+li{
     list-style-type: none;
     font-size: larger;
-    margin: auto;
-    padding: auto;
+    margin: 0px auto;
+    /*padding: auto; */
      
 }
 
