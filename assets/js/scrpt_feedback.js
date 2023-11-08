@@ -2,16 +2,16 @@
 
 const sendFeedback = document.getElementById ("submit-button");
 
-document.getElementById("feedback").addEventListener("submit", function(event){
+document.getElementById("feedback-form").addEventListener("submit", function(event){
     event.preventDefault();
-
     emailjs.init("8TpODwMV8scBpIrCj");
-    sendFormButton.value = "Sending..."; //changing value of the button when sending in progress
+    sendFeedback.value = "Sending..."; //changing value of the button when sending in progress
 
     emailjs.sendForm("service_aza1rx3","template_x3vmt96", this)
         .then(() => {
-            sendFormButton.value = "Send";
-            feedBackMessage();
+            sendFeedback.value = "Send";
+           // feedBackMessage();
+           feedBackMessage();
 
         }, (err) => {
             console.log(JSON.stringify(err));
@@ -24,11 +24,8 @@ document.getElementById("feedback").addEventListener("submit", function(event){
  */
 function feedBackMessage() {
     let message = `
-            <div class="">
                 <h1>Thank you for the feedback</h1>
-            </div>
-            <a href="index.html">Go back to game</a>
             `;
-    document.getElementById("feedback").innerHTML = message;
+    document.getElementById("feedback-form").innerHTML = message;
 }
     
