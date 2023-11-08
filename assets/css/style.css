@@ -188,6 +188,14 @@ input[type=submit] {
     resize: none;
   }
 
+  .error_content {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+    font-size: 200%;
+}
+
 
 /* Media query */
 
