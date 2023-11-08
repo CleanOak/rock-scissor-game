@@ -27,5 +27,6 @@ function feedBackMessage() {
                 <h1>Thank you for the feedback</h1>
             `;
     document.getElementById("feedback-form").innerHTML = message;
+     
 }
     
