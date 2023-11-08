@@ -4,7 +4,7 @@
 
 [Visit live website](https://cleanoak.github.io/rock-scissor-game/)
 
-[Mockup image](docs/amiresponsive-rock-paper.png)
+![Mockup image](docs/amiresponsive-rock-paper.png)
 
 
 
@@ -38,5 +38,110 @@
 11. [Acknowledgements](#acknowledgements)
 
 ## Project Goals
+
+The goal of this project is to build an easy and intuitive  Rock, Paper, Scissors, Lizard, Spock game.
+
+## User Goals
+
+- Play an online game against the computer
+- Play an online game that has an element of chance
+
+## Site Owner Goals
+
+- Create an online game which is intuitive and entertaining
+- Create an online game to be played against the computer
+- Create a simple navigation on the website
+- Create a fully responsive and accessible website
+
+## User Experience
+
+### Target Audience
+
+- Anyone who wants to be entertained by playing on the computer
+- Anyone who enjoys guessing games
+
+### User Requirements and Expectations
+
+- Easy to understand and navigate
+- Accessibility
+- A responsive website that allows users to play across different devices
+- Easy way to contact the developer with feedback
+
+## User Stories
+
+### Site User
+
+1. I want to easily understand the game
+2. I want to be able to choose a difficulty level
+3. I want to be able to see real-time scores when playing with the computer
+4. I want to know who won at the end of the game
+5. I want to be able to contact the developer
+
+### Site Owner
+
+1. I want users to easily understand the game
+2. I want users to easily navigate the game
+3. I want the game to be fully responsive
+4. I want the users to provide feedback after playing the game
+
+## Design
+
+### Colour Scheme
+
+### Fonts
+
+### Structure
+
+### Wireframes
+
+## Technologies Used
+
+### Languages
+
+- HTML
+- CSS
+- JAVASCRIPT
+
+## Frameworks and Tools
+
+## Features
+
+## Validation
+
+### HTML Validation
+
+### CSS Validation
+
+### JavaScript Validation
+
+### Accessibility
+
+### Performance
+
+### Testing
+
+
+## Deployment
+
+### GitHub Pages
+The website was deployed using GitHub Pages by following these steps:
+1. In the GitHub repository navigate to the Settings tab
+2. On the left-hand menu select Pages
+3. For the source select Branch: main
+4. Once saved, GitHub will refresh and your website will be published from the GitHub repository
+5. The link to your published website will appear: "Your site is published at https://aleksandracodes.github.io/CI_PP2_SunshineGuessing/"
+
+### Forking the GitHub Repository
+1. Go to the GitHub repository
+2. Click on the Fork button in the top right corner
+
+### Making a Local Clone
+1. Go to the GitHub repository 
+2. Locate the Code button above the list of files and click it
+3. Highlight the "HTTPS" button to clone with HTTPS and copy the link
+4. Open Git Bash
+5. Change the current working directory to the one where you want the cloned directory
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+7. Press Enter to create your local clone
 
 
