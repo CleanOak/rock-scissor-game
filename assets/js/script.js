@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let choiceButtons = document.getElementsByClassName("choice-button");
   for (let button of choiceButtons) {
     button.addEventListener("click", function () {
-      let signType = this.getAttribute("sign-type");
+      let signType = this.getAttribute("data-sign-type");
       if (timerId == null) {
         timerId = setInterval(countDown, 1000);
       }
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
   for (let button of startGameButtons) {
 
     button.addEventListener("click", function () {
-      let level = this.getAttribute("level");
+      let level = this.getAttribute("data-level");
       gameLevel=level;
       showGameBoard();
     });
