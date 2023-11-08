@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
   let resetButtons = document.getElementsByClassName("reset-button");
   for (let button of resetButtons) {
     button.addEventListener("click", function () {
-      reset();
-    })
+     homeButton ();
+    });
   }
 
 
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
         timerId = setInterval(countDown, 1000);
       }
       playGame(signType);
-    })
+    });
   }
 
   /**
@@ -61,10 +61,10 @@ document.addEventListener("DOMContentLoaded", function () {
       let level = this.getAttribute("level");
       gameLevel=level;
       showGameBoard();
-    })
+    });
   }
 
-})
+});
 
 /**
  * Function for the logic of the game
@@ -76,25 +76,25 @@ function playGame(userChoice) {
   //display user weapon
   if (userChoice === "rock") {
     userWeapon.innerHTML = "rock";
-    userWeapon.style.color = "blue"
+    userWeapon.style.color = "blue";
   }
   if (userChoice === "paper") {
     userWeapon.innerHTML = "paper";
-    userWeapon.style.color = "blue"
+    userWeapon.style.color = "blue";
   }
   if (userChoice === "scissors") {
     userWeapon.innerHTML = "scissors";
-    userWeapon.style.color = "blue"
+    userWeapon.style.color = "blue";
   }
 
   if (userChoice === "lizard") {
     userWeapon.innerHTML = "lizard";
-    userWeapon.style.color = "blue"
+    userWeapon.style.color = "blue";
   }
 
   if (userChoice === "spock") {
     userWeapon.innerHTML = "spock";
-    userWeapon.style.color = "blue"
+    userWeapon.style.color = "blue";
   }
 
   /**
@@ -102,25 +102,25 @@ function playGame(userChoice) {
    */
   if (computerChoice === "rock") {
     computerWeapon.innerHTML = "rock";
-    computerWeapon.style.color = "red"
+    computerWeapon.style.color = "red";
   }
   if (computerChoice === "paper") {
     computerWeapon.innerHTML = "paper";
-    computerWeapon.style.color = "red"
+    computerWeapon.style.color = "red";
   }
   if (computerChoice === "sci") {
     computerWeapon.innerHTML = "scissors";
-    computerWeapon.style.color = "red"
+    computerWeapon.style.color = "red";
   }
 
   if (computerChoice === "lizard") {
     computerWeapon.innerHTML = "lizard";
-    computerWeapon.style.color = "red"
+    computerWeapon.style.color = "red";
   }
 
   if (computerChoice === "spock") {
     computerWeapon.innerHTML = "spock";
-    computerWeapon.style.color = "red"
+    computerWeapon.style.color = "red";
   }
 
   /**
@@ -251,17 +251,17 @@ function getComputerChoice() {
   let randomChoice;
 
 if(gameLevel == 'easy'){
-  choices = ['rock', 'paper']
+  choices = ['rock', 'paper'];
   randomChoice = (Math.floor(Math.random() * choices.length));
 }
 
 if(gameLevel == 'medium'){
-  choices = ['rock', 'paper', 'sci']
+  choices = ['rock', 'paper', 'sci'];
   randomChoice = (Math.floor(Math.random() * choices.length));
 }
 
 if(gameLevel == 'hard'){
-  choices = ['rock', 'paper', 'sci', 'lizard', 'spock']
+  choices = ['rock', 'paper', 'sci', 'lizard', 'spock'];
   randomChoice = (Math.floor(Math.random() * choices.length));
 }
   return choices[randomChoice];
@@ -283,24 +283,24 @@ function youWin() {
 function compWin() {
   computerScore++;
   computerScoreSpan.textContent = computerScore;
-  resultsComments.textContent = "Computer Wins"
+  resultsComments.textContent = "Computer Wins";
 }
 
 function draw() {
-  resultsComments.textContent = "It's A Draw!!!"
+  resultsComments.textContent = "It's A Draw!!!";
 }
 
 function determineTotalWinner() {
 
   if (computerScore > userScore) {
-    displayTotalWinner.textContent = "Computer Wins"
+    displayTotalWinner.textContent = "Computer Wins";
   }
 
   if (computerScore < userScore) {
-    displayTotalWinner.textContent = "You Win"
+    displayTotalWinner.textContent = "You Win";
   }
   if (computerScore == userScore) {
-    displayTotalWinner.textContent = "It's A Draw!!!"
+    displayTotalWinner.textContent = "It's A Draw!!!";
   }
 
   /**
@@ -312,9 +312,10 @@ function determineTotalWinner() {
 
 }
 //reset page
-function reset() {
-  document.location.reload();
-}
+//function reset() {
+
+//  document.location.reload();
+//}
 
 /**
  * countdown to reset the game
