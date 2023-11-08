@@ -331,7 +331,6 @@ function countDown() {
   }
 }
 
-
 /**
  * Display main screen when game is initiated
  * game board to be hidden when user has not made a choice
