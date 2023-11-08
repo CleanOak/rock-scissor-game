@@ -39,4 +39,18 @@
 
 ## Project Goals
 
+The goal of this project is to build an easy and intuitive  Rock, Paper, Scissors, Lizard, Spock game.
+
+## User Goals
+
+- Play an online game against the computer
+- Play an online game that has an element of chance
+
+## Site Owner Goals
+
+- Create an online game which is intuitive and entertaining
+- Create an online game to be played against the computer
+- Create a simple navigation on the website
+- Create a fully responsive and accessible website
+
 
