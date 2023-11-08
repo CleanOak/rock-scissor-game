@@ -4,7 +4,7 @@
 
 [Visit live website](https://cleanoak.github.io/rock-scissor-game/)
 
-[Mockup image](docs/amiresponsive-rock-paper.png)
+![Mockup image](docs/amiresponsive-rock-paper.png)
 
 
 
