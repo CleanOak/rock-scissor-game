@@ -118,7 +118,8 @@ i {
     background-color: lightgreen;
 }
 
-.btn-reset{
+/* Applies to home button and play again button*/
+.btn-general{
     background-color: green;
     width: 250px;
     height: 35px;
@@ -128,11 +129,13 @@ i {
     font-size: 18px;
 }
 
-
+/* Final result display*/
 .result {
     font-size: 20px;
     
 }
+
+/* Feedback labels and text inputs*/
 
 label{
     margin-top: 0.5rem;
@@ -161,6 +164,9 @@ input[type=email] {
 
 
 /* W3 schools */
+
+/* Feedback inputs*/
+
 input[type=submit] {
     width: 60%;
     background-color: #4CAF50;
