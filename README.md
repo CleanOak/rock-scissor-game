@@ -119,7 +119,7 @@ The goal of this project is to build an easy and intuitive  Rock, Paper, Scissor
 
 ## Features
 
-The website has 3 web pages with 7 features
+The website has 3 web pages with 8 features
 
 ### Home Screen
 
@@ -177,13 +177,26 @@ A short message of appreciation after feedback is sent
 <img src="docs/features/thankyou_page.png">
 </details>
 
+### 404 error page
 
+- The site has a 404 error page which displays if the user enters a wrong URL
+- Allows user to go back to the main page
 
-
+<details><summary>See feature</summary>
+<img src="docs/features/error_page.png">
+</details>
 
 ## Validation
 
 ### HTML Validation
+
+The html pages for this website was validated using [Nu Html Check](https://validator.w3.org/nu/) and no errors were found. 
+
+* [Index page]()
+* [feedback page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcleanoak.github.io%2Frock-scissor-game%2Ffeedback.html)
+* [rules page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcleanoak.github.io%2Frock-scissor-game%2F404.html)
+* [404 page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcleanoak.github.io%2Frock-scissor-game%2F404.html)
+
 
 ### CSS Validation
 
