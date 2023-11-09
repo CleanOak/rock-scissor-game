@@ -5,12 +5,6 @@
 let userScore = 0;
 let computerScore = 0;
 
-let gameIntro = document.getElementById("game-intro");
-let gameBoard = document.getElementById("game-board");
-let gameEnd = document.getElementById("game-end");
-
-let rulesButton = document.getElementById("rules");
-
 let userScoreSpan = document.getElementById("user-score");
 let computerScoreSpan = document.getElementById("computer-score");
 let resultsComments = document.getElementById("display-comments");
@@ -20,7 +14,7 @@ let computerWeapon = document.getElementById("c-weapon");
 let timeLeft = document.getElementById("countdown");
 let timeSecond = 20;
 let timerId = null;
-let gameLevel ='easy';
+let gameLevel = 'easy';
 
 /**
  * Add an event listener to the document and run the main screen
@@ -29,12 +23,12 @@ let gameLevel ='easy';
 document.addEventListener("DOMContentLoaded", function () {
 
   // initialize reset button
-  let resetButtons = document.getElementsByClassName("reset-button");
-  for (let button of resetButtons) {
+  let resetButtons = document.querySelectorAll(".reset-button");
+  resetButtons.forEach(function (button) {
     button.addEventListener("click", function () {
-     homeButton ();
+      homeButton();
     });
-  }
+  });
 
 
   /**
@@ -59,10 +53,28 @@ document.addEventListener("DOMContentLoaded", function () {
 
     button.addEventListener("click", function () {
       let level = this.getAttribute("data-level");
-      gameLevel=level;
+      gameLevel = level;
       showGameBoard();
     });
   }
+
+  /**
+  * Initialise rules button to show rules
+  */
+  let gameRulesButton = document.querySelector("#rules-button");
+  if(gameRulesButton){
+   gameRulesButton.addEventListener("click", function () {
+       rulesPage();
+     });
+    }
+  /**
+* Initialise rules button to show rules
+*/
+  let gameFeedbackButton = document.getElementById("feedback-button");
+  gameFeedbackButton.addEventListener("click", function () {
+    feedbackPage();
+  });
+
 
 });
 
@@ -151,9 +163,9 @@ function playGame(userChoice) {
 
   }
 
- /**
-  * Conditions for User to win
-  */
+  /**
+   * Conditions for User to win
+   */
   if (userChoice === "rock" && computerChoice === "sci") {
     youWin();
 
@@ -195,9 +207,9 @@ function playGame(userChoice) {
 
   }
 
- /**
-  * conditions for computer to win
-  */
+  /**
+   * conditions for computer to win
+   */
   if (userChoice === "rock" && computerChoice === "paper") {
     compWin();
 
@@ -250,20 +262,20 @@ function getComputerChoice() {
   let choices;
   let randomChoice;
 
-if(gameLevel == 'easy'){
-  choices = ['rock', 'paper'];
-  randomChoice = (Math.floor(Math.random() * choices.length));
-}
+  if (gameLevel == 'easy') {
+    choices = ['rock', 'paper'];
+    randomChoice = (Math.floor(Math.random() * choices.length));
+  }
 
-if(gameLevel == 'medium'){
-  choices = ['rock', 'paper', 'sci'];
-  randomChoice = (Math.floor(Math.random() * choices.length));
-}
+  if (gameLevel == 'medium') {
+    choices = ['rock', 'paper', 'sci'];
+    randomChoice = (Math.floor(Math.random() * choices.length));
+  }
 
-if(gameLevel == 'hard'){
-  choices = ['rock', 'paper', 'sci', 'lizard', 'spock'];
-  randomChoice = (Math.floor(Math.random() * choices.length));
-}
+  if (gameLevel == 'hard') {
+    choices = ['rock', 'paper', 'sci', 'lizard', 'spock'];
+    randomChoice = (Math.floor(Math.random() * choices.length));
+  }
   return choices[randomChoice];
 
 }
@@ -311,11 +323,6 @@ function determineTotalWinner() {
   showGameEnd();
 
 }
-//reset page
-//function reset() {
-
-//  document.location.reload();
-//}
 
 /**
  * countdown to reset the game
@@ -329,17 +336,6 @@ function countDown() {
     determineTotalWinner();
 
   }
-}
-
-/**
- * Display main screen when game is initiated
- * game board to be hidden when user has not made a choice
- * Finish screen not displayed until game is over
- */
-function showGameIntro() {
-  document.getElementById("game-intro").style.display = "block";
-  document.getElementById("game-board").style.display = "none";
-  document.getElementById("game-end").style.display = "none";
 }
 
 /**
@@ -364,19 +360,19 @@ function showGameEnd() {
 }
 
 //Button to the Rules page
-function rulesPage(){
+function rulesPage() {
 
-  location.href='rules.html';
+  location.href = 'rules.html';
 }
 
 //Home button
-function homeButton (){
-  location.href='index.html';
+function homeButton() {
+  location.href = 'index.html';
 }
 
 //Button to the feedback page
-function feedbackPage(){
-  location.href='feedback.html';
+function feedbackPage() {
+  location.href = 'feedback.html';
 }
 
 
@@ -394,7 +390,7 @@ function initializeGameState() {
   timeSecond = 20;
   timeLeft.textContent = timeSecond;
   timerId = null;
-  gameLevel='easy';
+  gameLevel = 'easy';
   if (timerId != null) {
     clearInterval(timerId);
   }
