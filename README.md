@@ -192,7 +192,7 @@ A short message of appreciation after feedback is sent
 
 The html pages for this website was validated using [Nu Html Check](https://validator.w3.org/nu/) and no errors were found. 
 
-* [Index page]()
+* [Index page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcleanoak.github.io%2Frock-scissor-game%2Findex.html)
 * [feedback page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcleanoak.github.io%2Frock-scissor-game%2Ffeedback.html)
 * [rules page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcleanoak.github.io%2Frock-scissor-game%2F404.html)
 * [404 page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcleanoak.github.io%2Frock-scissor-game%2F404.html)
@@ -200,14 +200,37 @@ The html pages for this website was validated using [Nu Html Check](https://vali
 
 ### CSS Validation
 
+The stylesheet for this website was validated using the W3C [Jigsaw](https://jigsaw.w3.org/css-validator/) CSS validation service. The file contained no errors.
+
+* [CSS Validation](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcleanoak.github.io%2Frock-scissor-game%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
 ### JavaScript Validation
 
-### Accessibility
+JSHint JS Validation Service was used to validate the Javascript files. No significant issues were found.
+
+<details><summary>See Validation</summary>
+<img src="docs/validations/jshint.png">
+</details>
 
 ### Performance
 
+Google Lighthouse in Google Chrome Developer Tools was used to test the performance of the website.
+
+<details><summary>See Validation</summary>
+<img src="docs/validations/lighthouse.png">
+</details>
+
+
 ### Testing
 
+The website was tested on the following devices
+ 
+ - Iphone 12 pro
+ - MacBook Pro
+ - Samsung S22
+
+ The website has also been tested on Google Chrome, Microsoft Edge and Safari. <br>
+ There was no compatibility issues.
 
 ## Deployment
 
@@ -232,4 +255,26 @@ The website was deployed using GitHub Pages by following these steps:
 6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
 7. Press Enter to create your local clone
 
+## Credits
 
+- [Main Page image](https://setthetempoblog.wordpress.com)
+- [Design Idea](https://www.codewithfaraz.com/content/107/create-rock-paper-scissors-game-with-html-css-and-javascript#javascript-code)
+- - [UI Dev](https://theme.co/forum/t/footer-content-overlapping-with-main-content/73859)
+- [HTML Validator](https://validator.w3.org/nu/)
+- [CSS Validator](https://www.w3.org/)
+- [Wave Web Accessibility](https://wave.webaim.org/)
+- [Font Awesome](https://validator.w3.org/nu/)
+- [Google Fonts](https://validator.w3.org/nu/)
+- [W3 Schools](https://validator.w3.org/nu/)
+- [Stack Overflow](https://validator.w3.org/nu/)
+- [EmailJS](https://www.emailjs.com/docs/tutorial/creating-email-template/)
+- [Rules](https://www.pinterest.co.uk/pin/rock-paper-scissors-lizard-spock-diagram-i-made--85779567872551504/)
+- [Github Resource](https://github.com/aleksandracodes)
+
+## Acknowledgements
+
+My biggest gratitude goes to my wife who has supported me through out this project <br>
+Also to the following;
+- My mentor Mo Shami for his support and guidance
+- Kofi Boakye who helped in troubleshooting and encouragement
+- To the new friends I have made on this course who encourage me to do more
