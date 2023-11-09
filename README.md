@@ -112,7 +112,9 @@ The goal of this project is to build an easy and intuitive  Rock, Paper, Scissor
 - [GitHub](https://github.com/) was used as a remote repository to store project code
 - [Google Fonts](https://fonts.google.com/)
 - [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools) were used for debugging of the code and check site for responsiveness
-- [WC3 Validator](https://validator.w3.org/), [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/), [JShint](https://jshint.com/), [Wave Validator](https://wave.webaim.org/), [Lighthouse](https://developers.google.com/web/tools/lighthouse/) and [Am I Responsive](http://ami.responsivedesign.is/) were all used to validate the website
+- [WC3 Validator](https://validator.w3.org/), [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/), [JShint](https://jshint.com/), [Wave Validator](https://wave.webaim.org/)
+- [Lighthouse](https://developers.google.com/web/tools/lighthouse/) 
+- [Am I Responsive](http://ami.responsivedesign.is/) were all used to validate the website
 
 
 ## Features
@@ -120,6 +122,64 @@ The goal of this project is to build an easy and intuitive  Rock, Paper, Scissor
 The website has 3 web pages with 7 features
 
 ### Home Screen
+
+When the page loads, the home screen displays with the title boldly on top of the screen, a Rules Page and three buttons to show different difficult
+
+<details><summary>See feature</summary>
+<img src="docs/features/home_screen.png">
+</details>
+
+### Rules Page 
+
+The Rules Page displays the basic rules on how to play the game
+
+<details><summary>See feature</summary>
+<img src="docs/features/rules_page.png">
+</details>
+
+### Select Game Level button
+
+These buttons leads you to the selected difficulty level of the game
+
+<details><summary>See feature</summary>
+<img src="docs/features/selector.png">
+</details>
+
+### Score Board
+
+This page hides all the elements on the page to display the main game screen
+
+<details><summary>See feature</summary>
+<img src="docs/features/score_board.png">
+</details>
+
+### Game End page
+
+This screen hides all other elements to display who won and allows you to go back to the game or give a feedback
+
+<details><summary>See feature</summary>
+<img src="docs/features/End_page.png">
+</details>
+
+### Feedback Page
+
+This is a page that allows the user to contact the developer directly by filling a form submits via email
+
+<details><summary>See feature</summary>
+<img src="docs/features/feedback_page.png">
+</details>
+
+### Thank You Page
+
+A short message of appreciation after feedback is sent
+
+<details><summary>See feature</summary>
+<img src="docs/features/thankyou_page.png">
+</details>
+
+
+
+
 
 ## Validation
 
