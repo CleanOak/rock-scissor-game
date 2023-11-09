@@ -272,7 +272,7 @@ The website was deployed using GitHub Pages by following these steps:
 2. On the left-hand menu select Pages
 3. For the source select Branch: main
 4. Once saved, GitHub will refresh and your website will be published from the GitHub repository
-5. The link to your published website will appear: "Your site is published at https://aleksandracodes.github.io/CI_PP2_SunshineGuessing/"
+5. The link to your published website will appear: "Your site is published at https://cleanoak.github.io/rock-scissor-game/index.html"
 
 ### Forking the GitHub Repository
 1. Go to the GitHub repository
