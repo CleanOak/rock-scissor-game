@@ -86,11 +86,31 @@ The goal of this project is to build an easy and intuitive  Rock, Paper, Scissor
 
 ## Design
 
+The website was designed with the customer in mind. Making the website easy and intuitive as well as enjoyable
+
 ### Colour Scheme
+
+The colours chosen for this website was white, green, light green and black
 
 ### Fonts
 
+Standard fonts were used for this website
+
 ### Structure
+
+The website consist of 3 main pages. 
+
+### Index Page
+
+This consist of the differnet divs to display the content when necessary
+
+### Rules Page
+
+This page contained mainly the rules of the game with an image
+
+### Feedback Page
+
+This contains a form for the user to contact the developer after the game
 
 ### Wireframes
 
@@ -231,6 +251,17 @@ The website was tested on the following devices
 
  The website has also been tested on Google Chrome, Microsoft Edge and Safari. <br>
  There was no compatibility issues.
+
+ ## Bugs
+
+ ### Bugs                                          
+
+ - Uncaught TypeError: Cannot read properties of null (reading addEventListener)      
+ - Not fixed, this shows in the console but does not affect the game
+
+ ----------------------------------------------------------------------------------------------------------------------------------
+
+ 
 
 ## Deployment
 
