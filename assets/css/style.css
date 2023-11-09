@@ -24,7 +24,7 @@ img{
 
 
 
-
+/* score board area*/
 .score-board {
     background-color: #E6ECF0;
     box-sizing: border-box;
@@ -70,6 +70,7 @@ li{
      
 }
 
+/* User display*/
 #user-div {
     border: 3px solid black;
     width: 80px;
@@ -78,6 +79,7 @@ li{
     border-radius: 8px; 
 }
 
+/* Computer display */
 #comp-div {
     border: 3px solid black;
     width: 80px;
@@ -85,6 +87,8 @@ li{
     margin: 0 20px auto; 
     border-radius: 8px;  
 }
+
+/* Score display content area*/
 
 #score-display {
     border: 3px solid black;
@@ -97,6 +101,8 @@ li{
     font-size: 25px;
     text-align: center;
 }
+
+/* applies to game buttons*/
 
 #choices {
     width: 85%;
@@ -118,7 +124,7 @@ i {
     background-color: lightgreen;
 }
 
-/* Applies to home button and play again button*/
+/* Applies game buttons and home buttons*/
 .btn-general{
     background-color: green;
     width: 250px;
