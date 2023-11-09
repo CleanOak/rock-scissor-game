@@ -6,8 +6,6 @@
 
 ![Mockup image](docs/amiresponsive-rock-paper.png)
 
-
-
 ## Table of Content
 
 1. [Project Goals](#project-goals)
@@ -114,6 +112,12 @@ This contains a form for the user to contact the developer after the game
 
 ### Wireframes
 
+Wireframe Logic via Lucid Chart
+
+<details><summary>See feature</summary>
+<img src="docs/wireframes/wireframe_logic.png">
+</details>
+
 ## Technologies Used
 
 ### Languages
@@ -130,7 +134,6 @@ This contains a form for the user to contact the developer after the game
 - [Font Awesome](https://fontawesome.com/) - Icons from Font Awesome were used throughout the site
 - [Git](https://git-scm.com/) was used for version control within VSCode to push the code to GitHub
 - [GitHub](https://github.com/) was used as a remote repository to store project code
-- [Google Fonts](https://fonts.google.com/)
 - [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools) were used for debugging of the code and check site for responsiveness
 - [WC3 Validator](https://validator.w3.org/), [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/), [JShint](https://jshint.com/), [Wave Validator](https://wave.webaim.org/)
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse/) 
@@ -261,8 +264,6 @@ The website was tested on the following devices
 
  ----------------------------------------------------------------------------------------------------------------------------------
 
- 
-
 ## Deployment
 
 ### GitHub Pages
@@ -290,7 +291,7 @@ The website was deployed using GitHub Pages by following these steps:
 
 - [Main Page image](https://setthetempoblog.wordpress.com)
 - [Design Idea](https://www.codewithfaraz.com/content/107/create-rock-paper-scissors-game-with-html-css-and-javascript#javascript-code)
-- - [UI Dev](https://theme.co/forum/t/footer-content-overlapping-with-main-content/73859)
+- [UI Dev](https://theme.co/forum/t/footer-content-overlapping-with-main-content/73859)
 - [HTML Validator](https://validator.w3.org/nu/)
 - [CSS Validator](https://www.w3.org/)
 - [Wave Web Accessibility](https://wave.webaim.org/)
