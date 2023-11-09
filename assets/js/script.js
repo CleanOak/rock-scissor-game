@@ -61,12 +61,11 @@ document.addEventListener("DOMContentLoaded", function () {
   /**
   * Initialise rules button to show rules
   */
-  let gameRulesButton = document.querySelector("#rules-button");
-  if(gameRulesButton){
+  let gameRulesButton = document.getElementById("rules-button");
    gameRulesButton.addEventListener("click", function () {
        rulesPage();
      });
-    }
+    
   /**
 * Initialise rules button to show rules
 */

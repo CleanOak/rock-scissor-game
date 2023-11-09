@@ -117,6 +117,10 @@ The goal of this project is to build an easy and intuitive  Rock, Paper, Scissor
 
 ## Features
 
+The website has 3 web pages with 7 features
+
+### Home Screen
+
 ## Validation
 
 ### HTML Validation
