@@ -13,7 +13,7 @@
     2. [Site Owner Goals](#site-owner-goals)
 2. [User Experience](#user-experience)
     1. [Target Audience](#target-audience)
-    2. [User Requrements and Expectations](#user-requrements-and-expectations)
+    2. [User Requirements and Expectations](#user-requrements-and-expectations)
 3. [Design](#design)
     1. [Design Choices](#design-choices)
     2. [Colour](#colours)
@@ -37,7 +37,7 @@
 
 ## Project Goals
 
-The goal of this project is to build an easy and intuitive  Rock, Paper, Scissors, Lizard, Spock game.
+The goal of this project is to build an easy and intuitive  Rock, Paper, Scissor, Lizard, Spock game.
 
 ## User Goals
 
@@ -88,7 +88,7 @@ The website was designed with the customer in mind. Making the website easy and 
 
 ### Colour Scheme
 
-The colours chosen for this website was white, green, light green and black
+The colours chosen for this website were white, green, light green, and black
 
 ### Fonts
 
@@ -96,11 +96,11 @@ Standard fonts were used for this website
 
 ### Structure
 
-The website consist of 3 main pages. 
+The website consists of 3 main pages. 
 
 ### Index Page
 
-This consist of the differnet divs to display the content when necessary
+This consists of the different divs to display the content when necessary
 
 ### Rules Page
 
@@ -146,7 +146,7 @@ The website has 3 web pages with 8 features
 
 ### Home Screen
 
-When the page loads, the home screen displays with the title boldly on top of the screen, a Rules Page and three buttons to show different difficult
+When the page loads, the home screen displays the title boldly on top of the screen, a Rules Page, and three buttons to show different difficult
 
 <details><summary>See feature</summary>
 <img src="docs/features/home_screen.png">
@@ -160,9 +160,9 @@ The Rules Page displays the basic rules on how to play the game
 <img src="docs/features/rules_page.png">
 </details>
 
-### Select Game Level button
+### Select the Game Level button
 
-These buttons leads you to the selected difficulty level of the game
+These buttons lead you to the selected difficulty level of the game
 
 <details><summary>See feature</summary>
 <img src="docs/features/selector.png">
@@ -178,7 +178,7 @@ This page hides all the elements on the page to display the main game screen
 
 ### Game End page
 
-This screen hides all other elements to display who won and allows you to go back to the game or give a feedback
+This screen hides all other elements to display who won and allows you to go back to the game or give feedback
 
 <details><summary>See feature</summary>
 <img src="docs/features/End_page.png">
@@ -186,7 +186,7 @@ This screen hides all other elements to display who won and allows you to go bac
 
 ### Feedback Page
 
-This is a page that allows the user to contact the developer directly by filling a form submits via email
+This is a page that allows the user to contact the developer directly by filling out a form and submitting it via email
 
 <details><summary>See feature</summary>
 <img src="docs/features/feedback_page.png">
@@ -202,8 +202,8 @@ A short message of appreciation after feedback is sent
 
 ### 404 error page
 
-- The site has a 404 error page which displays if the user enters a wrong URL
-- Allows user to go back to the main page
+- The site has a 404 error page which displays if the user enters the wrong URL
+- Allows the user to go back to the main page
 
 <details><summary>See feature</summary>
 <img src="docs/features/error_page.png">
@@ -213,7 +213,7 @@ A short message of appreciation after feedback is sent
 
 ### HTML Validation
 
-The html pages for this website was validated using [Nu Html Check](https://validator.w3.org/nu/) and no errors were found. 
+The HTML pages for this website were validated using [Nu Html Check](https://validator.w3.org/nu/) and no errors were found. 
 
 * [Index page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcleanoak.github.io%2Frock-scissor-game%2Findex.html)
 * [feedback page](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcleanoak.github.io%2Frock-scissor-game%2Ffeedback.html)
@@ -248,12 +248,12 @@ Google Lighthouse in Google Chrome Developer Tools was used to test the performa
 
 The website was tested on the following devices
  
- - Iphone 12 pro
+ - iPhone 12 Pro
  - MacBook Pro
  - Samsung S22
 
- The website has also been tested on Google Chrome, Microsoft Edge and Safari. <br>
- There was no compatibility issues.
+ The website has also been tested on Google Chrome, Microsoft Edge, and Safari. <br>
+ There were no compatibility issues.
 
  ## Bugs
 
@@ -272,7 +272,7 @@ The website was deployed using GitHub Pages by following these steps:
 2. On the left-hand menu select Pages
 3. For the source select Branch: main
 4. Once saved, GitHub will refresh and your website will be published from the GitHub repository
-5. The link to your published website will appear: "Your site is published at https://aleksandracodes.github.io/CI_PP2_SunshineGuessing/"
+5. The link to your published website will appear: "Your site is published at https://cleanoak.github.io/rock-scissor-game/index.html"
 
 ### Forking the GitHub Repository
 1. Go to the GitHub repository
